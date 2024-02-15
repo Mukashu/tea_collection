@@ -1,0 +1,11 @@
+<div class="min-vh-100 d-flex align-items-center">
+  <div class="card mt-5 mb-5">
+    <img src="{{ tea.image }}" alt="{{ tea.id }}">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold fs-5 mb-4">{{ tea.title }}</h5>
+      <p class="card-text">{{ tea.description }}</p>
+      <p class="fw-bold">Цена: {{ tea.price }} руб.</p>
+      <a [routerLink]="'/order'" class="btn btn-primary ps-5 pe-5" (click)="setTitle(tea.title)">Купить</a>
+    </div>
+  </div>
+</div>

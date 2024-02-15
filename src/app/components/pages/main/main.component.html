@@ -1,0 +1,43 @@
+<main class="pt-5 pb-3 min-vh-100">
+  <div class="container">
+    <div class="slick__slider pb-4 wow animate__bounceInDown cent">
+      <div>
+        <img src="./assets/images/image1a.png" alt="thea1" class="w-100">
+      </div>
+    </div>
+    <div class="pt-4 pb-4 row justify-content-center row-cols-1">
+      <div class="col fw-bold text-center fs-2 mb-5">Ответы на часто задаваемые вопросы</div>
+      <div class="col-lg-8">
+        <div id="accordion">
+          <h3>Собираете ли вы подарочные боксы?</h3>
+          <div>
+            <p>Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и
+              стоимость!</p>
+          </div>
+          <h3>Сколько у вас разновидностей чая?</h3>
+          <div>
+            <p>У нас много разновидностей чая.</p>
+          </div>
+          <h3>В какой срок осуществляется доставка?</h3>
+          <div>
+            <p>В самый быстрый срок.</p>
+          </div>
+          <h3>У вас обновляется ассортимент?</h3>
+          <div>
+            <p>Наш ассортимент обновляется всегда.</p>
+          </div>
+          <h3>Какого объема у вас пачки чая?</h3>
+          <div>
+            <p>Самого лучшего объема.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="text-center fw-bold fs-2 pt-5 pb-5 mt-5 mb-5 col-lg-6">
+      Посмотрите наши чайные коллекции
+      <a class="btn btn-primary fs-5" [routerLink]="'/catalog'" (click)="goToCatalog()">Смотреть</a>
+    </div>
+
+  </div>
+</main>

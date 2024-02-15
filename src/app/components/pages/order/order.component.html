@@ -1,0 +1,102 @@
+<div class="row-cols-1 pt-5 pb-5 min-vh-100 d-flex flex-column align-items-center">
+
+  <div class="col text-center fw-bold fs-2 mb-5">Сделать заказ</div>
+
+  <form class="row g-4 col-lg-6 mt-4" id="Registration__Form" [formGroup]="signInForm">
+    <div class="col-12">
+      <label for="product" class="form-label">Товар</label>
+      <input type="text" class="form-control" name="product" id="product"
+             value="{{ teaTitle }}" disabled>
+    </div>
+    <div class="col-md-4">
+      <label for="name" class="form-label">Имя</label>
+      <input type="text" class="form-control" name="name" id="name"
+             formControlName="name">
+
+
+      <div *ngIf="name?.invalid && (name?.dirty || name?.touched)">
+        <div *ngIf="name?.errors?.['required']" class="text-danger">Введите имя</div>
+        <div *ngIf="name?.errors?.['pattern']" class="text-danger">Имя должно содержать только буквы</div>
+      </div>
+
+
+    </div>
+    <div class="col-md-4">
+      <label for="last_name" class="form-label">Фамилия</label>
+      <input type="text" class="form-control" name="last_name" id="last_name"
+             formControlName="last_name">
+
+
+      <div *ngIf="last_name?.invalid && (last_name?.dirty || last_name?.touched)">
+        <div *ngIf="last_name?.errors?.['required']" class="text-danger">Введите фамилию</div>
+        <div *ngIf="last_name?.errors?.['pattern']" class="text-danger">Фамилия должна содержать только буквы</div>
+      </div>
+
+
+    </div>
+    <div class="col-md-4">
+      <label for="phone" class="form-label">Телефон</label>
+      <input type="text" class="form-control" name="phone" id="phone"
+             formControlName="phone">
+
+
+      <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
+        <div *ngIf="phone?.errors?.['required']" class="text-danger">Введите номер телефона</div>
+        <div *ngIf="phone?.errors?.['pattern']" class="text-danger">Номер телефона должен содержать 11 цифр</div>
+      </div>
+
+
+    </div>
+    <div class="col-md-6">
+      <label for="country" class="form-label">Страна</label>
+      <input type="text" class="form-control" name="country" id="country"
+             formControlName="country">
+
+
+      <div *ngIf="country?.invalid && (country?.dirty || country?.touched)">
+        <div *ngIf="country?.errors?.['required']" class="text-danger">Введите страну</div>
+      </div>
+
+
+    </div>
+    <div class="col-md-6">
+      <label for="zip" class="form-label">Индекс</label>
+      <input type="text" class="form-control" name="zip" id="zip"
+             formControlName="zip">
+
+
+      <div *ngIf="zip?.invalid && (zip?.dirty || zip?.touched)">
+        <div *ngIf="zip?.errors?.['required']" class="text-danger">Введите индекс</div>
+      </div>
+
+
+    </div>
+    <div class="col-12">
+      <label for="address" class="form-label">Адрес</label>
+      <input type="text" class="form-control" name="address" id="address"
+             formControlName="address">
+
+
+      <div *ngIf="address?.invalid && (address?.dirty || address?.touched)">
+        <div *ngIf="address?.errors?.['required']" class="text-danger">Введите адрес</div>
+        <div *ngIf="address?.errors?.['pattern']" class="text-danger">Адрес может содержать буквы, цифры, пробелы, дефис и слеш</div>
+      </div>
+
+
+    </div>
+    <div class="col-12">
+      <label for="comment" class="form-label">Комментарий к заказу</label>
+      <input type="text" class="form-control" name="comment" id="comment"
+             formControlName="comment">
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary col-lg-3 hvr-buzz" type="submit" id="btn" (click)="signIn()">Отправить</button>
+      <div *ngIf="errorFlag" class="text-danger">Произошла ошибка. Попробуйте еще раз.</div>
+    </div>
+  </form>
+
+</div>
+
+<div id="popup" class="text-center fw-bold fs-2 pt-5 pb-5 mt-5 mb-5 col-lg-6">
+  Спасибо за заказ!
+</div>

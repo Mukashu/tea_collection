@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ct-22-tea-collection",
+            "outputPath": "dist/teaProd",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/styles/jquery-ui.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/libraries/jquery-3.7.0.min.js",
+              "src/libraries/jquery-ui.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
