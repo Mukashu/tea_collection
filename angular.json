@@ -32,8 +32,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/libraries/jquery-3.7.0.min.js",
-              "src/libraries/jquery-ui.min.js"
+              "src/assets/libraries/jquery-3.7.0.min.js",
+              "src/assets/libraries/jquery-ui.min.js"
             ]
           },
           "configurations": {

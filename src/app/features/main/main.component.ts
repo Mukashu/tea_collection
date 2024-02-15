@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subscription} from "rxjs";
-import {PopupService} from "../../../services/popup.service";
-import {RequestsService} from "../../../services/requests.service";
-import {SearchService} from "../../../services/search.service";
+import {PopupService} from "../../shared/services/popup.service";
+import {RequestsService} from "../../shared/services/requests.service";
+import {SearchService} from "../../shared/services/search.service";
 
 declare var $: any;
 

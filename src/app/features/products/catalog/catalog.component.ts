@@ -1,10 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {TeaType} from "../../../../types/tea.type";
-import {RequestsService} from "../../../services/requests.service";
+import {RequestsService} from "../../../shared/services/requests.service";
 import {Router} from "@angular/router";
-import {TeaDataService} from "../../../services/tea-data.service";
+import {TeaDataService} from "../../../shared/services/tea-data.service";
 import {Subscription, tap} from "rxjs";
-import {SearchService} from "../../../services/search.service";
+import {SearchService} from "../../../shared/services/search.service";
 
 @Component({
   selector: 'catalog-component',

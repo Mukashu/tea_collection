@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {TeaDataService} from "../../../services/tea-data.service";
+import {TeaDataService} from "../../shared/services/tea-data.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Subscription} from "rxjs";
-import {RequestsService} from "../../../services/requests.service";
+import {RequestsService} from "../../shared/services/requests.service";
 
 @Component({
   selector: 'order-component',

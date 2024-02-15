@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {RequestsService} from "../../../services/requests.service";
+import {RequestsService} from "../../../shared/services/requests.service";
 import {Router} from "@angular/router";
 import {TeaType} from "../../../../types/tea.type";
-import {TeaDataService} from "../../../services/tea-data.service";
+import {TeaDataService} from "../../../shared/services/tea-data.service";
 import {Subscription} from "rxjs";
 
 @Component({

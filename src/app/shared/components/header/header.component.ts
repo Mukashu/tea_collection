@@ -1,10 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {PopupService} from "../../../services/popup.service";
+import {PopupService} from "../../services/popup.service";
 import {FormControl} from "@angular/forms";
-import {RequestsService} from "../../../services/requests.service";
+import {RequestsService} from "../../services/requests.service";
 import {Router} from "@angular/router";
 import {Subscription} from "rxjs";
-import {SearchService} from "../../../services/search.service";
+import {SearchService} from "../../services/search.service";
 
 @Component({
   selector: 'header-component',
